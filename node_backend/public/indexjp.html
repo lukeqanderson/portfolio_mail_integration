@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Luke Anderson Portfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- to add google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- Add icon library -->
+</head>
+<body>
+    <!-- creates nav bar items -->
+    <nav class = "topnav sticky" id="myTopnav">
+        <a href="javascript:void(0);" id="smallNavIcon" class="navlink navjp icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="navlink navjp navitem" href="#Home">ホームページ</a>
+        <a class="navlink navjp navitem" href="#About">私について</a>
+        <a class="navlink navjp navitem" href="#Skills">スキル</a>
+        <a class="navlink navjp navitem" href="#Projects">プロジェクト</a>
+        <a class="navlink navjp navitem" href="#Contact">コンタクト</a>
+        <a class="navlink navjp navitem" href="#Resume">履歴書</a> 
+        <a href="index.html" class="navlink navjp navitem notselected notselectedjp language">English</a>
+        <a class="navlink navjp selected language japanese">日本語</a>
+    </nav>  
+   <!-- creates div for Home section -->
+   <a name = "Home"></a>
+   <div class = "home text dark">
+       <div class = "homespacer"></div>
+       <img id = "headshot" src = "headshot.jpg">
+       <div class = "homediv">
+           <h1 class = nametext>ルーク　アンダーソン</h1>
+           <h2 class = roletext>ウェブデベロッパ</h2>
+       </div>
+       <div class = "homespacer"></div>
+   </div>
+   <!-- creates div for About Me section -->
+   <a name = "About"></a>
+   <div class= "about text light">
+      <h2 class = "aboutHeading">私について</h2>
+      <p class = "aboutDescriptionjp">私は元レストランマネージャーから開発者になり、実務経験があります
+          ペースの速い環境で多様なチームと。私はコンピュータサイエンスと会計の学士号を取得して卒業します
+          2023年春に東オレゴン大学から。私はアプリケーションの開発に努めています
+          ユーザー重視、すっきりとしたデザイン、直感的な機能を備えています。私のコンピューターから離れているとき、私の趣味は次のとおりです。
+        ランニング、サイクリング、釣り。</p>
+   </div>
+   <!-- creates div for Skills section -->
+   <a name = "Skills"></a>
+   <div class = "skills text dark">
+       <h2 id = "skillsTitle">スキル</h2>
+       <div class = "skillCategories">
+           <div class = "skill-container">
+               <ul class = "skillsList skillListjp">
+                   <li>
+                       <h3>フロントエンド</h3>
+                   </li>
+                   <li>HTML</li>
+                   <li>CSS</li>
+                   <li>JavaScript</li>
+                   <li>React.js</li>
+               </ul>
+           </div>
+           <div class = "skill-container">
+               <ul class = "skillsList skillListjp">
+                   <li>
+                       <h3>バックエンド</h3>
+                   </li>
+                   <li>Node.js</li>
+                   <li>Express.js</li>
+               </ul>
+           </div>
+           <div class = "skill-container">
+               <ul class = "skillsList skillListjp">
+                   <li>
+                       <h3>他のスキル</h3>
+                   </li>
+                   <li>マネジメント</li>
+               </ul>
+           </div>
+       </div>
+   </div>
+   <!--div for sliding projects presentation  -->
+   <div class = "projects text">
+       <a name = "Projects"></a>
+       <div class = "projects-container">
+           <!-- previous button -->
+           <a id = "prev-button" class="prev slideshow-button">&#10094;</a>
+           <div class = "slideshow-container">
+               <!-- project 1 -->
+               <div class = "projectSlide fade">
+                    <h2 class = "projectsTitle projectsTitlejp text light">プロジェクト</h2>
+                   <div class = "project-display">
+                       <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project1.jpg"></a>
+                       <div class = "project-text project-textjp text dark">
+                           <div>間もなくプロジェクトとなる例を使用して作成されたサンプルプロジェクト。</div>
+                           <div>ソースコード： <a class = "src-code-link text" href = "https://github.com/lukeqanderson">GitHub</a></div>
+                       </div>
+                   </div>
+                   <div class = "numbered-text text light">1 / 2</div>
+               </div>
+               <!-- project 2 -->
+               <div class = "projectSlide fade">
+                    <h2 class = "projectsTitle projectsTitlejp text light">プロジェクト</h2>
+
+                   <div class = "project-display">
+                       <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project2.jpg"></a>
+                       <div class = "project-text project-textjp text dark">
+                        <div>間もなくプロジェクトとなる例を使用して作成されたサンプルプロジェクト。</div>
+                        <div>ソースコード： <a class = "src-code-link text" href = "https://github.com/lukeqanderson">GitHub</a></div>
+                       </div>
+                   </div>
+                   <div class = "numbered-text text light">2 / 2</div>
+               </div>
+           </div>
+           <!-- next button -->
+           <a id = "next-button" class="next slideshow-button">&#10095;</a>
+       </div>
+   </div>
+    <!--div for Contact form  -->
+   <div class = "contact-container">
+       <a name = "Contact"></a>
+       <h3 id = "contact-title" class = "text dark">コンタクト</h3>
+       <form method = "POST" class = "form">
+           <label class = "lnamejp contact-description text dark" for = "lname">姓： </label>
+           <input class = "contact-box text dark" type = "text" id = "lname" name = "lname"><br>
+           <label class = "fnamejp contact-description text dark" for = "fname">名： </label>
+           <input class = "contact-box text dark" type = "text" id = "fname" name = "fname"><br>
+           <label class = "emailjp contact-description text dark" for = "email">メール： </label>
+           <input class = "contact-box text dark" type = "text" id = "email" name = "email"><br>
+           <label class = "message contact-description text dark" for = "message">メッセージ： </label><br>
+           <textarea class = "message-box contact-box text dark" type = "text" id = "message" name = "message"></textarea><br>
+           <div class = "contact-button-container"><input class = "contact-button contact-buttonjp text dark" type = "submit" value = "送信"></div>
+       </form>
+   </div>
+   <!-- div for Resume section -->
+   <div class = "resume-container">
+       <a name = "Resume"></a>
+       <h3 id = "resume-title" class = "text light">履歴書</h3>
+       <a href="LukeAndersonResume.pdf"><img class = "resume-image" src = "resume-picture.png"></a>
+       <div class = "resume-text resume-textjp text light">私のウェブサイトにアクセスしていただきありがとうございます。</div><div class = "resume-text text light">上の画像をクリックして、最新の履歴書のPDFをダウンロードしてください。</div>
+   </div>
+   <!-- create Footer with social media links -->
+   <footer class = "stickybtm">
+       <!-- add fa social media icons with links-->
+       <p class = "footer-text text dark">ルーク　アンダーソンの</p>
+       <div class =sociallinks>
+           <a href="https://github.com/lukeqanderson#" class="fa fa-github fa-lg"></a>
+           <a href="https://www.linkedin.com/in/lukeqanderson/#" class="fa fa-linkedin fa-lg"></a>
+       </div>
+   </footer>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- for smtp email ability in contact form -->
+   <script src="https://smtpjs.com/smtp.js"></script>
+   <script src='script.js'></script>
+</body>
+</html>
