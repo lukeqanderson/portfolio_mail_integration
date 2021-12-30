@@ -42,19 +42,6 @@ const plusSlides = () => {
   showSlides(slideIndex += 1);
 }
 
-// for storing data from submitted contact form
-const submitForm = (e) => {
-  e.preventDefault();
-
-  let firstName = document.getElementById("fname").value;
-  let lastName = document.getElementById("lname").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-
-  // resets the form
-  document.getElementsByClassName("form")[0].reset();
-}
-
 // add event listeners for openining navbar dropdown
 const navIcon = document.getElementById('smallNavIcon');
 navIcon.addEventListener("click", navDropDown);
@@ -62,7 +49,6 @@ navIcon.addEventListener("click", navDropDown);
 // add event lisetner for closing navbar on item selection
 const navBarItems =  document.getElementsByClassName("navlink navitem");
 for (let i = 0; i < navBarItems.length; i++) {
-  console.log(navBarItems);
   navBarItems[i].addEventListener("click", navUp);
 }
 
@@ -73,6 +59,45 @@ const nextButton = document.getElementById("next-button");
 prevButton.addEventListener("click",minusSlides);
 nextButton.addEventListener("click",plusSlides);
 
-// add event listener for form submit
-const submit = document.getElementsByClassName("contact-button");
-submit[0].addEventListener("submit", submitForm);
+// variable to store the contact form
+const form = document.querySelector("form");
+
+// adds event lister for submit button click
+form.addEventListener("submit", (e) => {
+  // to prevent the page refreshing
+  e.preventDefault;
+
+  // to select input elements from form 
+  let firstName = document.getElementById("fname");
+  let lastName = document.getElementById("lname");
+  let email = document.getElementById("email");
+  let message = document.getElementById("message");
+
+  // creates an object with the input elements
+  let contactData = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    message: message.value
+  }
+
+  // to send form data to the backend using AJAX
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', '/');
+  xhr.setRequestHeader('content-type', 'application/json');
+  xhr.onload = () => {
+    console.log(xhr.responseText);
+    if (xhr.responseText === 'success') {
+      alert("Message sent. Thank you!");
+      firstName.value = '';
+      lastName.value = '';
+      email.value = '';
+      message.value = '';
+    }
+    else {
+      alert("Message failed to send. Please email me at lukeqanderson@gmail.com");
+    }
+  }
+
+  xhr.send(JSON.stringify(contactData));
+})
