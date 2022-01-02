@@ -210,17 +210,19 @@ nav > a:active {
 
 /* to adjust about section */
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #222831;
-  height: 80vh;
+  height: 100vh;
   width: 80vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
 
 /* to adjust size for about fonts */
 .aboutHeading {
+  text-align: center;
   font-size: 8vmin;
 }
 
