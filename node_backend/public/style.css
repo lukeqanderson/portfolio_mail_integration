@@ -29,6 +29,7 @@ Show the link that contains should open and close the topnav (.icon) */
   .topnav .navlink {
     display: none;
   }
+
   .topnav a.icon {
     float: left;
     display: block;
@@ -74,15 +75,19 @@ Show the link that contains should open and close the topnav (.icon) */
     display: block;
     text-align: left;
   }
+
   .topnavnav.responsive a.icon {
     font-size: 26px;
   }
+
   .navlink {
     font-size: 3vmin;
   }
+
   .language.japanese {
     font-size: 2.7vmin;
   }
+
   .navjp {
     font-size: 2.7vmin;
   }
@@ -135,7 +140,7 @@ i.fa.fa-bars {
   color: white;
 }
 
-nav > a:active {
+nav>a:active {
   color: #222831;
 }
 
@@ -267,7 +272,7 @@ nav > a:active {
   border: 5px solid #222831;
   border-radius: 15%;
   background-color: white;
-  font-size: 4vmin;
+  font-size: 2.5vmin;
   margin: 0;
 }
 
@@ -276,23 +281,28 @@ nav > a:active {
   #skillsTitle {
     padding-top: 22vh;
   }
+
   .skill-container {
     margin: 0.5vw;
   }
+
   .skills {
     height: 100vh;
   }
+
   .skillCategories {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
   }
+
   .skillsList {
     font-size: 2.5vmin;
     width: 30vmin;
     height: 30vmin;
   }
+
   .skillListjp {
     font-size: 2.3vmin;
   }
@@ -304,9 +314,11 @@ nav > a:active {
     padding: 15vmin;
     margin-bottom: 0;
   }
+
   .skills {
     height: 220vmin;
   }
+
   .skillCategories {
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
@@ -314,6 +326,7 @@ nav > a:active {
     width: 100vw;
     height: 150vmin;
   }
+
   .skillsList {
     width: 40vmin;
     height: 35vmin;
@@ -397,6 +410,7 @@ nav > a:active {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -406,6 +420,7 @@ nav > a:active {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -492,6 +507,7 @@ nav > a:active {
 .fname {
   padding-right: 2vmin;
 }
+
 .fnamejp {
   padding-right: 10.8vmin;
 }
@@ -500,6 +516,7 @@ nav > a:active {
 .lname {
   padding-right: 2.1vmin;
 }
+
 .lnamejp {
   padding-right: 10.8vmin;
 }
@@ -508,6 +525,7 @@ nav > a:active {
 .email {
   padding-right: 8.7vmin;
 }
+
 .emailjp {
   padding-right: 4.8vmin;
 }
@@ -542,6 +560,7 @@ nav > a:active {
   width: 12vmin;
   background-color: #a4e9ed;
 }
+
 .contact-buttonjp {
   font-weight: bold;
   font-size: 2.5vmin;
@@ -591,6 +610,7 @@ nav > a:active {
   margin-right: 5vw;
   font-size: 3vmin;
 }
+
 .resume-textjp {
   font-size: 2.4vmin;
 }
