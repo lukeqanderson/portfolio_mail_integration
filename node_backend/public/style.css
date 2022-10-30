@@ -63,11 +63,6 @@ Show the link that contains should open and close the topnav (.icon) */
   font-size: 23.2px;
 }
 
-/* to change japanese font */
-.japanese {
-  font-family: "Outfit", sans-serif;
-}
-
 /* To make the topnav verticle */
 @media screen and (max-width: 1000px) {
   .topnav.responsive a {
@@ -82,14 +77,6 @@ Show the link that contains should open and close the topnav (.icon) */
 
   .navlink {
     font-size: 3vmin;
-  }
-
-  .language.japanese {
-    font-size: 2.7vmin;
-  }
-
-  .navjp {
-    font-size: 2.7vmin;
   }
 }
 
@@ -302,10 +289,6 @@ nav>a:active {
     width: 30vmin;
     height: 30vmin;
   }
-
-  .skillListjp {
-    font-size: 2.3vmin;
-  }
 }
 
 /* to adjust grid to small screens */
@@ -386,11 +369,6 @@ nav>a:active {
   padding-left: 2vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
-}
-
-/* to adjust project text for japanese font size */
-.project-textjp {
-  font-size: 2.6vmin;
 }
 
 .numbered-text {
@@ -508,26 +486,14 @@ nav>a:active {
   padding-right: 2vmin;
 }
 
-.fnamejp {
-  padding-right: 10.8vmin;
-}
-
 /* to format last name description*/
 .lname {
   padding-right: 2.1vmin;
 }
 
-.lnamejp {
-  padding-right: 10.8vmin;
-}
-
 /* to format email area */
 .email {
   padding-right: 8.7vmin;
-}
-
-.emailjp {
-  padding-right: 4.8vmin;
 }
 
 /* to format contact input area */
@@ -556,14 +522,9 @@ nav>a:active {
   font-size: 3vmin;
   border: 2px solid #222831;
   border-radius: 15%;
-  height: 8vmin;
-  width: 12vmin;
+  height: 10vmin;
+  width: 20vmin;
   background-color: #a4e9ed;
-}
-
-.contact-buttonjp {
-  font-weight: bold;
-  font-size: 2.5vmin;
 }
 
 /* to adjust button on hover */
@@ -609,10 +570,6 @@ nav>a:active {
   margin-left: 5vw;
   margin-right: 5vw;
   font-size: 3vmin;
-}
-
-.resume-textjp {
-  font-size: 2.4vmin;
 }
 
 /* to style footer */
