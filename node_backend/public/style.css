@@ -532,6 +532,7 @@ nav>a:active {
   height: 10vmin;
   width: 20vmin;
   background-color: #a4e9ed;
+  cursor: pointer;
 }
 
 /* to adjust button on hover */
